@@ -1,0 +1,17 @@
+{
+  "name": "graphql-project",
+  "version": "1.0.0",
+  "description": "Implementación básica de graphql",
+  "main": "/src/app.js",
+  "scripts": {
+    "start": "node --require 'babel-register' src/app.js"
+  },
+  "author": "Juan Contreras <jcontrerasmeneses@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "graphql": "^14.0.2"
+  }
+}
