@@ -23,9 +23,9 @@ Se pretender obtener numeros aleatorios en el rango de 1 al 6 mediante el ingres
 
 **Ejemplo 3:**
 Se pretende obtener la cantidad de usuarios registrados en la colección `users` en la base de datos `test` desde el motor de base de datos Mondodb.
-NOTA: Pasos previos:
-1. Crear la collección: `db.createCollection("users")`
-2. Generar registros:
+**NOTA: Pasos previos**
+* Crear la collección: `db.createCollection("users")`
+* Generar registros:
 `db.users.insertOne({ 
     firstName: "John", 
     lastName: "Doe", 
