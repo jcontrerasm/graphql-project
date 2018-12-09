@@ -1,3 +1,6 @@
+install:
+	yarn intall
+
 start:
 	yarn start
 
