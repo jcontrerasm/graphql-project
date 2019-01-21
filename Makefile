@@ -6,3 +6,9 @@ start:
 
 server:
 	yarn server
+
+server-http:
+	yarn serverHttp
+
+up-mongo:
+	mongo
