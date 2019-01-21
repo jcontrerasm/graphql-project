@@ -5,7 +5,8 @@
   "main": "/src/app.js",
   "scripts": {
     "start": "node --require 'babel-register' src/app.js",
-    "server": "node --require 'babel-register' src/server.js"
+    "server": "node --require 'babel-register' src/server.js",
+    "serverHttp": "node --require 'babel-register' src/serverHttp.js"
   },
   "author": "Juan Contreras <jcontrerasmeneses@gmail.com>",
   "license": "MIT",
@@ -13,8 +14,12 @@
     "babel": "6.23.0",
     "babel-preset-env": "1.7.0",
     "babel-register": "6.26.0",
-    "dotenv": "^6.2.0",
+    "dotenv": "6.2.0",
     "graphql": "14.0.2",
     "mongodb": "3.1.10"
+  },
+  "dependencies": {
+    "express": "4.16.4",
+    "express-graphql": "0.7.1"
   }
 }

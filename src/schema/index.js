@@ -31,12 +31,13 @@ const queryType = new GraphQLObjectType({
           defaultValue: 1
         }
       },
-      resolve: (_, args) => getRoll(args.quantity)
+      resolve: (obj, args) => getRoll(args.quantity)
     },
     usersCount: {
       type: GraphQLInt,
-      resolve: (_, args, { client }) =>
-        client.db('test').collection('users').countDocuments()
+      resolve: (obj, args, ctx) => {
+        return ctx.db('test').collection('users').countDocuments();
+      }
     }
   }
 });
